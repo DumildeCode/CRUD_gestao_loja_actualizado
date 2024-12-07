@@ -1,0 +1,171 @@
+/* Reset básico para estilização consistente */
+body, h1, h2, h3, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafc;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+header {
+    background-color: rgb(6, 59, 90);
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 5px solid #0056b3;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+header nav a:hover {
+    background: #0056b3;
+}
+
+main {
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 24px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+form button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background: #007bff;
+    color: #fff;
+    font-size: 18px;
+}
+
+table td {
+    font-size: 16px;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+    transition: background 0.3s;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border-top: 5px solid #0056b3;
+    font-size: 14px;
+}
+
+/* Animação simples para feedback visual */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+main, header, footer {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    header nav a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    form input, form textarea, form button {
+        font-size: 14px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+    }
+}
