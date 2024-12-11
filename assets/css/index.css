@@ -1,29 +1,5 @@
-header{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    background-color: rgb(6, 59, 90);
-}
-ul{
-    list-style-type: none
-}
-logs{
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-nav{
-    overflow: hidden;
-    white-space: nowrap;
-}
-nav ul{
-    display: flex;
-    flex-direction: row;
-    margin-top: 10%;
-}
-nav ul li{
-    gap:2px;
-}
-footer{
-    background-color: rgb(6, 59, 90);
+  .picture{
+    width: 110px;
+    height: 70px;
+   margin:0 25px;
 }

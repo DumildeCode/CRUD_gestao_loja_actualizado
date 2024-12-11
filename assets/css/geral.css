@@ -27,7 +27,7 @@ header {
    left: 0;
    z-index: 100;
    width: 100%;
-   gap: 29rem;
+   gap: 53rem;
 }
 
 
@@ -79,26 +79,32 @@ header nav a {
 ul{
     list-style-type: none;
     display: grid;
-    gap: 2rem;
+    gap: 50rem;
 }
 
 
 /*Agora as Secçõees*/
 main {
     margin: 20px 0;
-    display: flex;
-    width: 90%;
+    max-width: 1010px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
-    background: #32405a;
+    background: #fff;
     border: 1px solid #ddd;
     border-radius: .8rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   
 }
+h3{
+    text-align: center;
+    color: #32405a;
+    font-size: 24px;
+}
+
 h2 {
     margin-bottom: 20px;
-    color: #007bff;
+    color: #32405a;
     font-size: 24px;
 }
 
@@ -109,7 +115,8 @@ form label {
     color: #333;
 }
 
-form input, form textarea, form button {
+
+form input, form textarea, form button, form select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -119,30 +126,7 @@ form input, form textarea, form button {
 }
 
 form button {
-    background: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s;
-}
-.abouting{
-    width: 30%;
-    justify-content: end;
-}
-.text-about{
-    color: white;
-}
-.btn_geral{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    text-decoration: none;
-}
-.btn_geral{
-    background: #007bff;
+    background: #32405a;
     color: white;
     border: none;
     cursor: pointer;
@@ -158,6 +142,12 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    overflow: hidden;
+}
+.rolagem{
+    max-height: 400px; /* Ajuste a altura máxima de acordo com a sua necessidade */
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
 table th, table td {
@@ -165,11 +155,16 @@ table th, table td {
     padding: 10px;
     text-align: left;
 }
+table th{
+    text-align: center;
+    
+}
 
 table th {
-    background: #007bff;
+    background: #32405a;
     color: #fff;
     font-size: 18px;
+
 }
 
 table td {
@@ -183,16 +178,6 @@ table tr:nth-child(even) {
 table tr:hover {
     background: #f1f1f1;
     transition: background 0.3s;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background: #007bff;
-    color: white;
-    border-top: 5px solid #0056b3;
-    font-size: 14px;
 }
 
 /* Animação simples para feedback visual */
@@ -209,33 +194,5 @@ main, header, footer {
     animation: fadeIn 0.5s ease;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    main {
-        padding: 10px;
-    }
-header{
-    gap: 0;
-     overflow: hidden;
-}
-header nav{
-    width: 50%;
-}
-    header nav a {
-        font-size: 14px;
-        padding: 5px;
-       
-    }
 
-    h2 {
-        font-size: 20px;
-    }
 
-    form input, form textarea, form button {
-        font-size: 14px;
-    }
-
-    table th, table td {
-        font-size: 14px;
-    }
-}

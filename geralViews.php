@@ -47,7 +47,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visão Geral</title>
-    <link rel="stylesheet" href="../CRUD/assets/css/styles.css">
+    <link rel="stylesheet" href="../CRUD01/assets/css/geral.css">
     <style>
         .tabela-dados {
             display: none;
@@ -125,23 +125,23 @@ $conn->close();
 .pesquisa-container button:hover {
     background-color: #0056b3; /* Azul mais escuro */
 }
-
-
-        header,table th,footer{
-            background-color: rgb(6, 59, 90);
-        }
-      
     </style>
 </head>
 <body>
-    <header>
-        <h1>Visão Geral do Sistema</h1>
-        <nav>
-            <a href="index.php">Voltar para Home</a>
-        </nav>
-    </header>
+<header>
+       
+       <img src="assets/img/logo.png" alt="logo" class="picture">     
+     
+     <nav>
+         <ul>
+             
+             <li><a href="index.php">Voltar à Página Inicial</a></li>
+         </ul>
+     </nav>
+ </header>
+
     <main>
-        <h2>Estatísticas do Sistema</h2>
+        <h3>Estatísticas do Sistema</h3>
 
         <!-----Secção Usuários------->
         <section>
@@ -154,7 +154,7 @@ $conn->close();
         <input type="text" id="pesquisa-usuarios" placeholder="Pesquisar por ID...">
         <button onclick="pesquisarTabela('usuarios', 'pesquisa-usuarios')">Pesquisar</button>
     </div>
-
+        <div class="rolagem">
     <table class="tabela-dados" id="usuarios">
         <thead>
             <tr>
@@ -171,6 +171,7 @@ $conn->close();
             <?php endforeach; ?>
         </tbody>
     </table>
+    </div>
 </section>
 
                 <!-----Secção Clientes------->
@@ -184,7 +185,7 @@ $conn->close();
         <input type="text" id="pesquisa-clientes" placeholder="Pesquisar por ID...">
         <button onclick="pesquisarTabela('clientes', 'pesquisa-clientes')">Pesquisar</button>
     </div>
-
+                <div class="rolagem">
     <table class="tabela-dados" id="clientes">
         <thead>
             <tr>
@@ -201,6 +202,7 @@ $conn->close();
             <?php endforeach; ?>
         </tbody>
     </table>
+    </div>
 </section>
 
                 <!-----Secção Fornecedores------->
@@ -214,7 +216,7 @@ $conn->close();
         <input type="text" id="pesquisa-fornecedores" placeholder="Pesquisar por ID...">
         <button onclick="pesquisarTabela('fornecedores', 'pesquisa-fornecedores')">Pesquisar</button>
     </div>
-
+                <div class="rolagem">
     <table class="tabela-dados" id="fornecedores">
         <thead>
             <tr>
@@ -233,6 +235,7 @@ $conn->close();
             <?php endforeach; ?>
         </tbody>
     </table>
+    </div>
 </section>
 
                 <!-----Secção Categorias------->
@@ -246,7 +249,7 @@ $conn->close();
         <input type="text" id="pesquisa-categorias" placeholder="Pesquisar por ID...">
         <button onclick="pesquisarTabela('categorias', 'pesquisa-categorias')">Pesquisar</button>
     </div>
-
+                <div class="rolagem">
     <table class="tabela-dados" id="categorias">
         <thead>
             <tr>
@@ -265,6 +268,7 @@ $conn->close();
             <?php endforeach; ?>
         </tbody>
     </table>
+    </div>
 </section>
 
                 <!-----Secção Produtos------->
@@ -278,7 +282,7 @@ $conn->close();
         <input type="text" id="pesquisa-produtos" placeholder="Pesquisar por ID...">
         <button onclick="pesquisarTabela('produtos', 'pesquisa-produtos')">Pesquisar</button>
     </div>
-
+                <div class="rolagem">
     <table class="tabela-dados" id="produtos">
         <thead>
             <tr>
@@ -299,6 +303,7 @@ $conn->close();
             <?php endforeach; ?>
         </tbody>
     </table>
+    </div>
 </section>
 
                 <!-----Secção Vendas------->
@@ -312,7 +317,7 @@ $conn->close();
         <input type="text" id="pesquisa-vendas" placeholder="Pesquisar por ID...">
         <button onclick="pesquisarTabela('vendas', 'pesquisa-vendas')">Pesquisar</button>
     </div>
-
+                <div class="rolagem">
     <table class="tabela-dados" id="vendas">
         <thead>
             <tr>
@@ -331,12 +336,12 @@ $conn->close();
             <?php endforeach; ?>
         </tbody>
     </table>
+    </div>
 </section>
 
-    </main>
-    <footer>
-        <p>&copy; 2024 - Gestão da Loja</p>
-    </footer>
+
+
+    
 
     <script>
         // Função para mostrar/ocultar a tabela de dados

@@ -1,0 +1,74 @@
+.items{
+    display: flex;
+}
+
+:root{
+    --color-background:#EFF3F9;
+    --color-white:#fff;
+    --text-color:#263238;
+    --color-secondary:#0065D4;
+    --color-red:#F85E5E;
+}
+.most-View{
+    margin:0rem 4rem;
+    padding:2rem;
+    background:var(--color-background);
+    border-radius: .8rem;
+}
+.most-View h1{
+    margin-bottom:1rem;
+    font-weight:100;
+    color:var(--color-secondary);
+
+}
+.most-View h2{
+    font-weight:100;
+    color:var(--color-secondary);
+
+}
+.cursosImg{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+}
+.icon-figma{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:4rem;
+    height:4rem;
+    border-radius:.4rem;
+    
+}
+.icon-execel{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:4rem;
+    height:4rem;
+    border-radius:.4rem;
+   
+    
+}
+.icon-expre{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:4rem;
+    height:4rem;
+    border-radius:.4rem;
+   
+}
+.cursos{
+    gap:1rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.curso p{
+    margin:.2rem 0;
+    font-size:.8rem;
+}
+.curso{
+    padding:.8rem 1rem;
+    background:var(--color-white);
+}

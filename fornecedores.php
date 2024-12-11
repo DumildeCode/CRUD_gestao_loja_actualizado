@@ -73,21 +73,23 @@ if (isset($_GET['delete'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestão de Fornecedores</title>
-    <link rel="stylesheet" href="../CRUD/assets/css/styles.css">
-    <style>
-        header,form button, table th,footer{
-            background-color: rgb(6, 59, 90);
-        }
-    </style>
+    <link rel="stylesheet" href="../CRUD01/assets/css/geral.css">
+
 </head>
 <body>
 <header>
-    <h1>Gestão de Fornecedores</h1>
-    <nav>
-        <a href="index.php">Voltar para Home</a>
-    </nav>
-</header>
+       
+       <img src="assets/img/logo.png" alt="logo" class="picture">     
+    
+     <nav>
+         <ul>
+             
+             <li><a href="index.php">Voltar à Página Inicial</a></li>
+         </ul>
+     </nav>
+ </header>
 <main>
+<h3>Fornecedores</h3>
     <h2><?php echo isset($fornecedor) ? 'Editar Fornecedor' : 'Adicionar Novo Fornecedor'; ?></h2>
     <form action="fornecedores.php" method="POST">
         <?php if (isset($fornecedor)): ?>
@@ -103,6 +105,7 @@ if (isset($_GET['delete'])) {
     </form>
 
     <h2>Fornecedores Cadastrados</h2>
+    <div class="rolagem">
     <table border="1">
         <thead>
             <tr>
@@ -138,9 +141,8 @@ if (isset($_GET['delete'])) {
             <?php endif; ?>
         </tbody>
     </table>
+    </div>
 </main>
-<footer>
-    <p>&copy; 2024 - Gestão da Loja</p>
-</footer>
+
 </body>
 </html>
